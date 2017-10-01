@@ -11,8 +11,14 @@ typedef struct node
   struct node *next;
   struct node *prev;
 }NODE;
+//srno- serial number
+//nob-name of the book
+//auth-author
+//sub-subject
+//tnoc-total number of copies
+//lnoc=lent number of copies
 
- typedefstruct dlist
+typedef struct dlist
 {
   NODE *head;
   NODE *tail;
