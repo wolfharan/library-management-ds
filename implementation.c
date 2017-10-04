@@ -92,4 +92,6 @@ int deletebook(BDLIST *l,char name[10])
     }
         
     
-  
+  int lendbook(BDLIST *l,char name[10])
+  {
+    
