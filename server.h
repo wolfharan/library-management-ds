@@ -20,14 +20,20 @@ typedef struct bdlist
   int nbooks;
  }BDLIST;
 
-typedef struct tnode
+typedef struct tbnode
 {
   char name[4];
   struct tnode *p1;
   struct tnode *p2;
   struct tnode *p3;
   struct tnode *p4;
-}TNODE;
+}TBNODE;
+
+typedef struct tsubnode
+{
+  char name[6];
+  BNODE *head;
+}SUBNODE;
 
 typedef struct tree
 {
