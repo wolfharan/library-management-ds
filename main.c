@@ -161,35 +161,6 @@ insert_book(library *lib,char name[],char auth[],int tnc,char sub[])
     }
 
 
-/*  else
-  {
-    if(strcmp(sub,"CS")==0)
-    {
-
-      lib->CS->tail->next=temp;
-      lib->CS->tail=temp;
-      lib->CS->nob++;
-    }
-    else if(strcmp(sub,"EC")==0)
-    {
-      lib->EC->tail->next=temp;
-      lib->EC->tail=temp;
-      lib->EC->nob++;
-    }
-    else if(strcmp(sub,"MECH")==0)
-    {
-      lib->MECH->tail->next=temp;
-      lib->MECH->tail=temp;
-      lib->MECH->nob++;
-    }
-    else if(strcmp(sub,"CIVIL")==0)
-    {
-      lib->CIVIL->tail->next=temp;
-      lib->CIVIL->tail=temp;
-      lib->CIVIL->nob++;
-    }
-
-  }*/
     lib->nob++;
 
 }
@@ -457,27 +428,7 @@ display_books_lent_to(library *lib,char name[],char sub[])
 void main()
 {
   library lib;
-  init_lib(&lib);;
-/*  char name[30];
-  char author[30];
-  gets(name);
-  gets(author);
- insert_book(&lib,"Norse Mythology","Neil Gaiman",5,"CS");
- insert_book(&lib,"Norse Mythology","Neil Gaiman",5,"CS");
-  insert_book(&lib,"Norse Mythology","Neil Gaiman",5,"CS");
-  insert_book(&lib,"Mythology","Neil Gaiman",5,"CIVIL");
-
-  lend_book(&lib,"CS","Norse Mythology",123,"Hari");
-  lend_book(&lib,"CIVIL","Mythology",123,"Hari");
-  lend_book(&lib,"CIVIL","Mythology",123,"Vishwas");
-  display_books_borrowed_by(&lib,"Hari");
-  return_book(&lib,"Norse Mythology","CS","Hari");
-display_all_books(&lib);
-
-  display_books_borrowed_by(&lib,"Hari");
-  display_books_lent_to(&lib,"Mythology","CIVIL");
-  display_books_lent_to(&lib,"Norse Mythology","CS");
-*/
+  init_lib(&lib);
 
 char bname[30];
 char bauth[20];
